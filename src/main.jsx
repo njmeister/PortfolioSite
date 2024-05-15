@@ -1,7 +1,13 @@
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import AboutPage from './pages/AboutPage.jsx'
+import BoardPage from './pages/BoardPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import ErrorPage from './pages/ErrorPage.jsx'
+import ProjectPage from './pages/ProjectPage.jsx'
+import ResumePage from './pages/ResumePage.jsx'
 import { element } from 'prop-types';
 
 // Define the accessible routes, and which components respond to which URL
