@@ -10,6 +10,7 @@ export default function Board({ projects }) {
 					img={project.img}
 					description={project.description}
 					link={project.link}
+					github={project.github}
 				/>
 			))}
 		</div>
