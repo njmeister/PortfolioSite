@@ -17,8 +17,8 @@ export default function Nav({ currentPage, handlePageChange}) {
 		<h2>
 			<Link 
 				to="/projects"
-				onClick={() => handlePageChange('Projects')}
-				className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
+				onClick={() => handlePageChange('projects')}
+				className={currentPage === 'projects' ? 'nav-link active' : 'nav-link'}
 			>
 				Projects
 			</Link>
@@ -26,8 +26,8 @@ export default function Nav({ currentPage, handlePageChange}) {
 		<h2>
 			<Link 
 				to="/contact"
-				onClick={() => handlePageChange('Contact')}
-				className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+				onClick={() => handlePageChange('contact')}
+				className={currentPage === 'contact' ? 'nav-link active' : 'nav-link'}
 			>
 				Contact
 			</Link>
@@ -35,8 +35,8 @@ export default function Nav({ currentPage, handlePageChange}) {
 		<h2>
 			<Link 
 				to="/resume"
-				onClick={() => handlePageChange('Resume')}
-				className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+				onClick={() => handlePageChange('resume')}
+				className={currentPage === 'resume' ? 'nav-link active' : 'nav-link'}
 			>
 				Resume
 			</Link>
