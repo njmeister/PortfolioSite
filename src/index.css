@@ -26,8 +26,14 @@ a {
 	width: 80vw;
 	background-color: #7630b3;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	& img {
+		width: 50%;
+		height: 50%;
+	}
 }
 
 /* body {
