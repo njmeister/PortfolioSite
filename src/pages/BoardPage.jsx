@@ -4,45 +4,45 @@ export default function BoardPage() {
 
 	const projects = [
 		{
-			title: "Project 1",
-			img: "https://imgs.search.brave.com/FuWZ-lGigxFBFnRRugIlzmzqL6_PcRASXPY7ABiH6CA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P3Y9MTUzMDEyOTA4/MQ",
-			description: "This is a description of project 1",
-			link: "https://www.google.com"
+			title: "Book Blend",
+			img: "../../assets/images/bookblend1.png",
+			description: "Book Blend is a web application that allows users to rate and leave comments on books they've read.",
+			link: "https://book-blend-reviews-e430070779d0.herokuapp.com/"
 		},
 		{
-			title: "Project 2",
-			img: "https://imgs.search.brave.com/FuWZ-lGigxFBFnRRugIlzmzqL6_PcRASXPY7ABiH6CA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P3Y9MTUzMDEyOTA4/MQ",
-			description: "This is a description of project 2",
-			link: "https://www.google.com"
+			title: "Witchy Weather",
+			img: "../../assets/images/witchyweather1.png",
+			description: "Witchy Weather tracks current astronomical events and advises the user on optimal times for spellcasting.",
+			link: "https://avadeisler.github.io/Witchy_Weather/"
 		},
 		{
-			title: "Project 3",
-			img: "https://imgs.search.brave.com/FuWZ-lGigxFBFnRRugIlzmzqL6_PcRASXPY7ABiH6CA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P3Y9MTUzMDEyOTA4/MQ",
-			description: "This is a description of project 3",
-			link: "https://www.google.com"
+			title: "JATE",
+			img: "../../assets/images/jate1.png",
+			description: "Just Another Text Editor is a simple Progressive Web App text editor.",
+			link: "https://pwa-text-editor-nxla.onrender.com"
 		},
 		{
-			title: "Project 4",
-			img: "https://imgs.search.brave.com/FuWZ-lGigxFBFnRRugIlzmzqL6_PcRASXPY7ABiH6CA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P3Y9MTUzMDEyOTA4/MQ",
-			description: "This is a description of project 4",
-			link: "https://www.google.com"
+			title: "Tech Blog",
+			img: "../../assets/images/techBlog1.png",
+			description: "Tech Blog is a mock blog site where users can create an account, make posts, and comment on other users' posts.",
+			link: "https://njm-tech-blog-75452fdd6827.herokuapp.com/"
 		},
 		{
-			title: "Project 5",
-			img: "https://imgs.search.brave.com/FuWZ-lGigxFBFnRRugIlzmzqL6_PcRASXPY7ABiH6CA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P3Y9MTUzMDEyOTA4/MQ",
-			description: "This is a description of project 5",
-			link: "https://www.google.com"
+			title: "Note Taker",
+			img: "../../assets/images/noteTaker1.png",
+			description: "Note Taker is a simple note-taking application that allows users to create, save, and delete notes.",
+			link: "https://rocky-bayou-45322-d85580837a71.herokuapp.com/"
 		},
 		{
-			title: "Project 6",
-			img: "https://imgs.search.brave.com/FuWZ-lGigxFBFnRRugIlzmzqL6_PcRASXPY7ABiH6CA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzA1/MzMvMjA4OS9maWxl/cy9wbGFjZWhvbGRl/ci1pbWFnZXMtaW1h/Z2VfbGFyZ2UucG5n/P3Y9MTUzMDEyOTA4/MQ",
-			description: "This is a description of project 6",
-			link: "https://www.google.com"
+			title: "Weather Dashboard",
+			img: "../../assets/images/weatherDashboard.png",
+			description: "Weather Dashboard is a simple weather application that allows users to search for a city and view the current weather and a 5-day forecast.",
+			link: "https://njmeister.github.io/Challenge6-WeatherDashboard/"
 		},
 		
 	]
 	  return (
-	<div>
+	<div className="boardPage">
 	  <h1>Projects</h1>
 	  <Board projects={projects} />
 	</div>
