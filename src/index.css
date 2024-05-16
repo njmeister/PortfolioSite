@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .header {
 	background-color: #1d0068;
 	min-height: 60px;
@@ -16,9 +21,9 @@
 }
 
 .project {
-	margin: 5vw;
-	height: 40vw;
-	width: 40vw;
+	margin: 10vw;
+	height: 80vw;
+	width: 80vw;
 	background-color: #7630b3;
 	display: flex;
 	justify-content: center;
@@ -47,16 +52,9 @@
 }
 
 .nav {
-	width: 50vw;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	background-color: transparent;
 
-	& a {
-		color: white;
-		text-decoration: none;
-		margin: 0 10px;
-	}
+	
 }
 
 .board {
@@ -72,4 +70,61 @@
 	align-items: center;
 	background-color: aqua;
 	padding: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+	.hamburgerMenu button {
+		width: 50px;
+		height: 50px;
+		background-color: transparent;
+		border: none;
+		outline: none;
+	}
+
+	.hamburger div {
+		width: 50px;
+		height: 5px;
+		background-color: black;
+		margin: 5px 0;
+		border-radius: 50px;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* .menu a {
+		color: white;
+		text-decoration: none;
+	} */
+
+	.nav h2 {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.hamburgerMenu {
+		display: none;
+	}
+
+	.nav {
+		width: 50vw;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+
+		& a {
+			margin: 0 10px;
+		}
+	}
+
+	.project {
+		margin: 10px;
+		height: 200px;
+		width: 200px;
+	}
 }

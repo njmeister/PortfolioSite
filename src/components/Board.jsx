@@ -7,6 +7,8 @@ export default function Board() {
 			<Project />
 			<Project />
 			<Project />
+			<Project />
+			<Project />
 		</div>
 	);
 }

@@ -1,8 +1,8 @@
-export default function Row() {
+export default function Row({ title, description }) {
   return (
 	<div className="row">
-		<h3>Title</h3>
-		<p>Description</p>
+		<h3>{title}</h3>
+		<p>{description}</p>
 	</div>
   );
 }
