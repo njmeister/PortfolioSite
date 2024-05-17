@@ -1,6 +1,6 @@
 :root {
 	--header-color: #1d0068;
-	--footer-color: #282c34;
+	--footer-color: #0b0b0d;
 	--project-title-background: rgba(0, 0, 0, 0.75);
 	--body-color: #212327;
 }
@@ -27,12 +27,16 @@ a {
 
 .header {
 	background-color: var(--header-color);
-	min-height: 60px;
+	height: 60px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
+	position: sticky;
+	width: 100%;
+	z-index: 1;
+	top: 0;
 }
 
 .project {
@@ -74,11 +78,28 @@ a {
 	}
 }
 
+.downloadBtn {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& button {
+		width: 50%;
+		padding: 10px;
+		border-radius: 5px;
+		border: none;
+		background-color: var(--header-color);
+		color: white;
+	}
+
+}
+
 
 
 .footer {
 	background-color: var(--footer-color);
-	height: 50px;
+	height: 60px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -87,6 +108,11 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	font-size: 10px;
+
+	& img {
+		height: 40px;
+	}
 }
 
 .nav-link.active {
@@ -269,9 +295,9 @@ a {
 	}
 
 	.project {
-		margin: 10px;
-		height: 200px;
-		width: 200px;
+		margin: 5vw;
+		height: 40vw;
+		width: 40vw;
 	}
 
 	.row .content {
