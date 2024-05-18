@@ -4,7 +4,7 @@
 
 This is my submission for the React Portfolio challenge in the UTA/EdX Coding Bootcamp. This challenge aimed to create a portfolio for my work using React.
 
-<img src="assets/JATE_screenshot.png"/>
+<img src="public/assets/images/portfolio_screenshot.png"/>
 
 <a href="https://main--noahmeister.netlify.app/">Link</a>
 
