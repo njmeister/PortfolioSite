@@ -1,8 +1,10 @@
 :root {
 	--header-color: #1d0068;
 	--footer-color: #0b0b0d;
-	--project-title-background: rgba(0, 0, 0, 0.75);
-	--body-color: #212327;
+	--project-title-background: rgba(0, 0, 0, 0.9);
+	--body-color: #040307;
+	--text-accent: #39ff14;
+	--card-color: #0d0228;
 }
 
 * {
@@ -15,6 +17,8 @@ body {
 	background-color: var(--body-color);
 	color: white;
 }
+
+
 
 h2 {
 	font-size: 28px;
@@ -43,32 +47,46 @@ a {
 	margin: 10vw;
 	height: 80vw;
 	width: 80vw;
-	background-color: black;
+	background-color: var(--card-color);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	position: relative;
+	overflow: hidden;
 
 	& h3 {
 		position: absolute;
 		top: 0px;
 		background-color: var(--project-title-background);
+		color: var(--text-accent);
 		width: 100%;
 		text-align: center;
 		padding: 10px;
 		font-size: 20px;
+		flex-shrink: 0;
 	}
 
 	& a {
 		padding-bottom: 20px;
+		font-size: 20px;
+		color: var(--text-accent);
+		flex-shrink: 0;
+	}
+
+	& p {
+		padding: 10px;
+		padding-top: 20px;
+		text-align: center;
+		flex-shrink: 0;
 	}
 
 }
 
 .project .img-container {
 	width: 100%;
-	height: 80%;
+	height: 70%;
+	flex-shrink: 1;
 
 	& img {
 		width: 100%;
@@ -116,7 +134,7 @@ a {
 }
 
 .nav-link.active {
-	color: red;
+	color: var(--text-accent);
 }
 
 .boardPage {
@@ -206,6 +224,19 @@ a {
 		padding: 5px;
 		border-radius: 5px;
 	}
+}
+
+.project-links {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.resumePage {
+	text-align: center;
 }
 
 
@@ -305,10 +336,16 @@ a {
 		grid-template-columns: 1fr 3fr;
 		justify-content: center;
 		align-items: center;
+		margin-top: 20px;
 
 		& > * {
 			margin: 0px 50px;
 			margin-bottom: 20px;
 		}
+	}
+
+	.row .img-container {
+		max-width: 300px;
+		max-height: 300px;
 	}
 }

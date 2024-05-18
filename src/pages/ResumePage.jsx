@@ -8,7 +8,7 @@ export default function ResumePage() {
 	const resume = '../../assets/images/Meister_Noah_Resume.pdf';
 
 	return (
-		<div>
+		<div className="resumePage">
 			<Row title={title} description={description} />
 			<a href={resume} download="Meister_Noah_Resume.pdf" className="downloadBtn">
 				<button>Download Resume</button>

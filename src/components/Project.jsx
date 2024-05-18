@@ -6,7 +6,9 @@ export default function Project({ title, description, link, img, github}) {
 		  	<img src={img} alt={title} />
 		  </div>
 		  <p>{description}</p>
-		  <a href={link}>View Project</a>
-		  <a href={github}>View GitHub</a>
+		  <div className="project-links">
+			<a href={link}>View Project</a>
+			<a href={github}>View GitHub</a>
+		  </div>
 		</div>
 	  )};
